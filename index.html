@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Nesar Cheats</title>
+    <style>
+        /* General Page Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #FFB6C1, #8A2BE2);
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        h1, h2 {
+            font-family: 'Arial', sans-serif;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px 0;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #FF6347;
+        }
+
+        /* Buttons for Login/Sign Up */
+        .auth-buttons {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+
+        .auth-buttons button {
+            padding: 12px 20px;
+            background-color: #FF6347;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .auth-buttons button:hover {
+            background-color: #FF4500;
+            transform: translateY(-4px);
+        }
+
+        /* 3D Effect for Forms and Boxes */
+        .pubg-cheat-box {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            width: 350px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transform: perspective(1000px) rotateY(0deg);
+            transition: transform 0.5s ease;
+        }
+
+        .pubg-cheat-box:hover {
+            transform: perspective(1000px) rotateY(10deg);
+        }
+
+        .pubg-cheat-box a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .pubg-cheat-box a:hover {
+            color: #FFD700;
+            text-decoration: underline;
+        }
+
+        .form-container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .form-container form {
+            display: none;
+        }
+
+        .form-container form.active {
+            display: block;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        input:focus {
+            box-shadow: 0 0 8px rgba(255, 99, 71, 0.8);
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #FF6347;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FF4500;
+            transform: translateY(-4px);
+        }
+
+        main {
+            padding: 50px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        /* Animation for Title */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            animation: slideIn 1s ease-out;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </nav>
+        <!-- Buttons for Login/Sign Up -->
+        <div class="auth-buttons">
+            <button id="login-btn" onclick="toggleForm('login')">Login</button>
+            <button id="signup-btn" onclick="toggleForm('signup')">Sign Up</button>
+        </div>
+    </header>
+
+    <main id="home">
+        <!-- Empty Homepage Content -->
+        <h1>Welcome To Nesar Cheats</h1>
+        
+        <!-- PUBG Cheat File Box -->
+        <div class="pubg-cheat-box">
+            <h2>PUBG CHEAT FILE</h2>
+            <p>Click the link below to download the PUBG cheat file:</p>
+            <a href="https://drive.google.com/file/d/1uy0TdvY-MgBvvs8LfdpO3eb0qgyKM-yQ/view?usp=drive_link" target="_blank">Download PUBG Cheat File</a>
+        </div>
+    </main>
+
+    <main id="auth">
+        <h2>Login / Sign Up</h2>
+
+        <div class="form-container">
+            <!-- Login Form -->
+            <form id="login-form">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="login-username" required><br><br>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form id="signup-form">
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" name="signup-username" required><br><br>
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="signup-email" required><br><br>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="signup-password" required><br><br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        // Function to toggle between Login and Sign Up forms
+        function toggleForm(formType) {
+            const loginForm = document.getElementById('login-form');
+            const signupForm = document.getElementById('signup-form');
+            const loginBtn = document.getElementById('login-btn');
+            const signupBtn = document.getElementById('signup-btn');
+
+            // Hide both forms initially
+            loginForm.classList.remove('active');
+            signupForm.classList.remove('active');
+
+            // Show the selected form based on the button clicked
+            if (formType === 'login') {
+                loginForm.classList.add('active');
+                loginBtn.textContent = "Go to Login";
+                signupBtn.textContent = "Sign Up";
+            } else if (formType === 'signup') {
+                signupForm.classList.add('active');
+                loginBtn.textContent = "Login";
+                signupBtn.textContent = "Go to Sign Up";
+            }
+        }
+    </script>
+</body>
+
+</html>
