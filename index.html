@@ -51,30 +51,6 @@
             color: #FF6347;
         }
 
-        /* Buttons for Login/Sign Up */
-        .auth-buttons {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-        }
-
-        .auth-buttons button {
-            padding: 12px 20px;
-            background-color: #FF6347;
-            color: white;
-            border: none;
-            cursor: pointer;
-            margin-left: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .auth-buttons button:hover {
-            background-color: #FF4500;
-            transform: translateY(-4px);
-        }
-
         /* 3D Effect for Forms and Boxes */
         .pubg-cheat-box {
             background-color: #333;
@@ -103,49 +79,6 @@
         .pubg-cheat-box a:hover {
             color: #FFD700;
             text-decoration: underline;
-        }
-
-        .form-container {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        .form-container form {
-            display: none;
-        }
-
-        .form-container form.active {
-            display: block;
-        }
-
-        input {
-            padding: 10px;
-            margin: 10px;
-            width: 250px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease;
-        }
-
-        input:focus {
-            box-shadow: 0 0 8px rgba(255, 99, 71, 0.8);
-        }
-
-        button {
-            padding: 12px 25px;
-            background-color: #FF6347;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #FF4500;
-            transform: translateY(-4px);
         }
 
         main {
@@ -191,11 +124,6 @@
                 <li><a href="#home">Home</a></li>
             </ul>
         </nav>
-        <!-- Buttons for Login/Sign Up -->
-        <div class="auth-buttons">
-            <button id="login-btn" onclick="toggleForm('login')">Login</button>
-            <button id="signup-btn" onclick="toggleForm('signup')">Sign Up</button>
-        </div>
     </header>
 
     <main id="home">
@@ -210,56 +138,6 @@
         </div>
     </main>
 
-    <main id="auth">
-        <h2>Login / Sign Up</h2>
-
-        <div class="form-container">
-            <!-- Login Form -->
-            <form id="login-form">
-                <label for="login-username">Username:</label>
-                <input type="text" id="login-username" name="login-username" required><br><br>
-                <label for="login-password">Password:</label>
-                <input type="password" id="login-password" name="login-password" required><br><br>
-                <button type="submit">Login</button>
-            </form>
-
-            <!-- Sign Up Form -->
-            <form id="signup-form">
-                <label for="signup-username">Username:</label>
-                <input type="text" id="signup-username" name="signup-username" required><br><br>
-                <label for="signup-email">Email:</label>
-                <input type="email" id="signup-email" name="signup-email" required><br><br>
-                <label for="signup-password">Password:</label>
-                <input type="password" id="signup-password" name="signup-password" required><br><br>
-                <button type="submit">Sign Up</button>
-            </form>
-        </div>
-    </main>
-
-    <script>
-        // Function to toggle between Login and Sign Up forms
-        function toggleForm(formType) {
-            const loginForm = document.getElementById('login-form');
-            const signupForm = document.getElementById('signup-form');
-            const loginBtn = document.getElementById('login-btn');
-            const signupBtn = document.getElementById('signup-btn');
-
-            // Hide both forms initially
-            loginForm.classList.remove('active');
-            signupForm.classList.remove('active');
-
-            // Show the selected form based on the button clicked
-            if (formType === 'login') {
-                loginForm.classList.add('active');
-                loginBtn.textContent = "Go to Login";
-                signupBtn.textContent = "Sign Up";
-            } else if (formType === 'signup') {
-                signupForm.classList.add('active');
-                loginBtn.textContent = "Login";
-                signupBtn.textContent = "Go to Sign Up";
-            }
-        }
-    </script>
 </body>
 
 </html>
